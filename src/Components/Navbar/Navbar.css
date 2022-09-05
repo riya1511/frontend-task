@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+.navbar{
+    height: 6.5rem;
+    width: 100%;
+    background-color: black;
+    opacity: 1;
+    border-bottom-width: 1px;
+    display: flex;
+    align-items: center;
+    color: white;
+    position: fixed;
+    padding: 0.5rem 0rem;
+    justify-content: space-evenly;
+    border: 2px solid hsla(0,0%,100%,.2);
+    z-index: 50;
+    top: 0;
+    font-size: 1.25rem;
+}
+
+.hamburger{
+    /* border: 0;
+    padding: 0.5rem;
+    background-color: transparent;
+    color: #fff;
+    font-size: 3rem;
+    transition: background-color 0.2s ease-in-out;
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    transform: translateY(-50%); */
+    display: none;
+}
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    align-items: center;
+    /* margin-right: -22px; */
+}
+
+.navbar img {
+    height: 50px;
+}
+
+.nav-links {
+    color: #C9CACC;
+    text-decoration: none;
+    /* padding: 0 1rem; */
+    height: 100%;
+    cursor: pointer;
+}
+
+.nav-links:active {
+    color: #fff;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+}
+
+.navbar li {
+    list-style: none;
+    margin: 20px;
+}
+
+ /*.navbar a {
+    text-decoration: none;
+    color: #C9CACC;
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar a:active{
+    color: #fff;
+} */
+
+.download-btn {
+    border: none;
+    background-color: #1a1a1a;
+    /* position: absolute;
+    right: 10px; */
+    color: #fff;
+    border-radius: 900px;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    width: auto;
+    font-size: 1.5rem;
+    padding: 16px;
+    transition: all 0.2s ease-in-out;
+    font-family: 'Poppins', sans-serif;
+}
+
+.download-btn div {
+    border-radius: 50%;
+    width: 50px;
+    font-size: 2rem;
+    font-weight: 700;
+    height: 50px;
+    padding: 8px;
+    background-color: #fff;
+    color: #090809;
+    margin-left: 35px;
+}
+
+@media screen and (min-width: 1024px) {
+    .navbar{
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .navbar {
+        transition: 0.8s all ease;
+        height: 8rem;
+    }
+
+    .navbar img {
+        position: absolute;
+        left: 90px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 60%);
+        font-size: 1.8rem;
+        cursor: pointer;
+        border: 0;
+        padding: 0.5rem;
+        background-color: transparent;
+        color: #fff;
+        transition: background-color 0.2s ease-in-out;
+    }
+
+    .download-btn {
+        display: none;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+}

@@ -1,0 +1,46 @@
+.section3{
+    padding: 20px;
+    height: 100vh;
+    background-color: #090809;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+
+.text{
+    width: 50%;
+    height: 300px;
+    position: absolute;
+    bottom: 250px;
+    color: #fff;
+    text-align: center;
+}
+
+.text h1{
+    font-size: 6rem;
+    font-weight: 700;
+}
+
+.text h3{
+    font-size: 2rem;
+    letter-spacing: 1.5px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .text {
+        bottom: 200px;
+        width: 60%;
+    }
+
+    .text h1 {
+        font-size: 3rem;
+    }
+
+    .text h3 {
+        font-size: 1.25rem;
+        margin-top: 16px;
+    }
+}

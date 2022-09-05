@@ -1,0 +1,49 @@
+.section4{
+    padding: 20px;
+    height: 100vh;
+    background-color: #090809;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+
+/* .founder_pic{
+    width: 100px;
+    height: 100px;
+} */
+
+.section4 img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.section4 .text{
+    color: rgba(255, 255, 255, 1);
+    width: 30%;
+    height: 300px;
+    position: absolute;
+    top: 450px;
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+    .section4 {
+        padding: 0;
+    }
+
+    .section4 .text{
+        width: 60%;
+        height: 300px;
+        position: absolute;
+        top: 450px;
+        text-align: center;
+        margin-top: 2rem;
+        font-size: 1rem;
+    }
+}
